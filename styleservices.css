@@ -1,0 +1,182 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #031540; /* Ubah jadi biru gelap */
+  color: #fff;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #031540;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar a {
+  color: #fff;
+  margin-left: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #00abf0;
+}
+
+/* Services Page */
+.services-page {
+  padding: 100px 0;
+  background: #031540;
+  color: #fff;
+  text-align: center;
+}
+
+.services-page .heading {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.services-page .heading span {
+  color: #00abf0;
+}
+
+.services-page .intro {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #cfd9e6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Services Page */
+.services-page {
+  padding: 100px 0;
+  background: #031540;
+  color: #fff;
+  text-align: center;
+}
+
+/* Full Grid */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  width: 100%;
+  margin: 0;
+  padding: 0 40px; /* sedikit jarak dari tepi biar tidak nempel */
+  box-sizing: border-box;
+}
+
+.services-page h2 { 
+  font-size: 2.5rem;       /* ukuran besar */
+  font-weight: 500;        /* tebal */
+  letter-spacing: 2px;     /* jarak antar huruf */
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;          /* warna putih */
+  position: relative;      /* supaya garis bisa posisinya relatif */
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", serif; 
+}
+
+/* Garis bawah animasi */
+.services-page h2::after { 
+  content: "";
+  position: absolute;
+  bottom: -10px;          /* jarak garis ke teks */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;               /* awalnya 0 */
+  height: 3px;
+  background-color: #00bfff; /* warna garis (biru muda) */
+  transition: width 0.5s ease;
+}
+
+.services-page h2:hover::after {
+  width: 100px;           /* garis muncul saat hover */
+}
+
+.service-box {
+  background: #042a70;
+  padding: 40px 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.service-box i {
+  font-size: 40px;
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+.service-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.service-box:hover {
+  background: #053084;
+  transform: translateY(-5px);
+}
+
+/* Tombol kembali */
+.back-home {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00abf0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn-home:hover {
+  background: #0086c9;
+  transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  background: #031540; /* Disamakan dengan body */
+  color: #cfd9e6;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 60px;
+}
