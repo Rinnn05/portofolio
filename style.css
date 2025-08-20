@@ -51,6 +51,35 @@ body {
   color: #00abf0;
 }
 
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  background: linear-gradient(-90deg, #031540 65%, #fff 35%);
+}
+
+/* Tambahan khusus untuk HP */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;     /* Biar gambar & teks susun ke bawah */
+    justify-content: center;
+    text-align: center;
+    background: #031540;        /* Biar gradasinya tidak bikin sempit */
+    padding: 20px;
+    height: auto;               /* Biar tidak terlalu tinggi */
+  }
+
+  .home-content {
+    text-align: center;         /* Teks rata tengah di HP */
+  }
+
+  .social-icons {
+    justify-content: center;    /* Sosial media ke tengah */
+  }
+}
+
 /* ================= HOME SECTION ================= */
 .home {
   height: 100vh;
@@ -174,4 +203,5 @@ body {
   text-align: center;
   padding: 20px;
   border-radius: 30px;
+
 }
